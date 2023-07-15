@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="menu.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400&display=swap" rel="stylesheet">
+        
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+        <div class="leftside">
+            <div class="bigimg">
+                <img class="img3" src="./images/img3.png" alt="">
+            </div>
+            <div class="QuickLinks">
+                <div class="h3">
+                    <h3>Quick Links</h3>
+                </div>
+                
+                <ol type="1">
+                    <a href="/index.html" class="a"><li>Home</li></a>
+                   <a href="#" class="a"><li>your Orders</li></a> 
+                   <a href="#" class="a"><li>Wallet</li></a>
+                    <a href="#" class="a"><li>Profile</li></a>
+                    <a href="#" class="a"><li>Logout</li></a>
+                </ol>
+            </div>
+            <div class="aboutus">
+                <ol type="1">
+                    <div class="h3">
+                        <h3>More About Us</h3>
+                    </div>
+                    
+                   <a href="#" class="a"><li>Our Blog</li></a> 
+                   <a href="#" class="a"><li>Upcoming Dishes</li></a>
+                    <a href="#" class="a"><li>Our Story</li></a>
+                    <a href="#" class="a"><li>Social Media Links</li></a>
+                </ol>
+            </div>
+        </div>
+        <div class="rightside">
+            <nav class="navbar">
+                <div class="inputfield">
+                    <span class="searchimg"><img src="./images/search 1.png" alt=""></span>
+                    <input type="search" id="search" placeholder="Search food">
+                </div>
+               
+                <button id="btn">Sign up</button>
+                <button>Login</button>
+                <img class="img4" src="images/—Pngtree—javanese character with blangkon holding_8999487 2.png" alt="">
+               
+            </nav>
+            <div id="cart" class="cart">
+                
+            </div>
+            <div class="abc">
+                <h1><a class="menutag" href="/menu.html">Menu</a></h1>
+                <span><button onclick="placeOrder()">Place Order</button></span>
+            </div>
+            <div class="model-container">
+                <div class="model">
+                    <i class='bx bxs-heart'></i>
+                    <h3>Order status</h3>
+                    <p id="status"></p>
+                    <button id="pay-button" onclick="payment()"></button>
+                    <button id="cancel" onclick="closePopup()">cancel</button>
+                    <i class='bx bx-x' onclick="closePopup()"></i>
+                </div>
+        
+            </div>
+            <div class="menu">
+               
+                  
+                
+            </div>
+        </div>
+        
+        
+    </div>
+    <script src="./menu.js"></script>
+</body>
+</html>
